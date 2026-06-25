@@ -1,14 +1,20 @@
-import { Button } from "@/components/ui/button"
+
+import Image from "next/image"
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-white text-3xl font-bold underline">
-        Hello world!!!
-      </h1>
-      <Button>Click Me</Button>
-      
+    <div className='flex h-screen max-h-screen'>
+      <section className="remove-scrollbar container my-auto">
+        <div className="sub-container max-w-[490px]">
+          <Image src="/assets/logo-full.svg" 
+          width={1000} 
+          height={1000} 
+          alt='patient' 
+          className='mb-21 h-10 w-fit'
+          />
+          
+        </div>
+      </section>
     </div>
-
   )
 }
